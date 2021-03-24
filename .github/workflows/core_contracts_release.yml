@@ -21,4 +21,4 @@ jobs:
 
       # Runs the Super-Linter action
       - name: Run the core contract release script
-        uses: ./.github/scripts/cd_core_contracts_release.sh ${{ github.event.inputs.release_version }} ${{ github.event.inputs.network }}
+        uses: ./.github/scripts/cd_core_contracts_release.sh ${{ github.event.inputs.release_version }}! ${{ github.event.inputs.network }}!
