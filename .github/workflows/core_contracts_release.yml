@@ -14,6 +14,7 @@ on:
 jobs:
   core_contracts_release:
     runs-on: ubuntu-latest
+    environment: test
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
@@ -21,4 +22,4 @@ jobs:
 
       # Runs the Super-Linter action
       - name: Run the core contract release script
-        uses: ./scripts/cd_core_contracts_release.sh ${{github.event.inputs.release_version}} ${{github.event.inputs.network}}
+        uses: ./scripts/cd_core_contracts_release.sh
