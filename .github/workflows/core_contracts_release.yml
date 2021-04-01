@@ -20,6 +20,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Runs the Super-Linter action
+      # Runs the CD core contracts release script
       - name: Run the core contract release script
-        uses: ./scripts/cd_core_contracts_release.sh
+        run: ./scripts/cd_core_contracts_release.sh
+        shell: bash
