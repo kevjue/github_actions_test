@@ -22,5 +22,5 @@ jobs:
 
       # Runs the CD core contracts release script
       - name: Run the core contract release script
-        run: sh ./scripts/cd_core_contracts_release.sh
+        run: sh ./scripts/cd_core_contracts_release.sh ${{ github.event.inputs.release_version }} ${{ github.event.inputs.network }}
         shell: bash

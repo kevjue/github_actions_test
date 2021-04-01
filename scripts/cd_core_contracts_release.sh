@@ -1,4 +1,5 @@
 #!/bin/bash
 
-echo "test"
+echo $1
+echo $2
 exit 0
